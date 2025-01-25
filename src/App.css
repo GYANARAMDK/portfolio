@@ -1,0 +1,111 @@
+/* Light Mode */
+body.light {
+  background-color: white;
+  color: black;
+  transition: background-color 0.3s ease;
+}
+
+/* Dark Mode */
+body.dark {
+  background-color: black;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+/* Button styling */
+.toggle-btn {
+  background-color: transparent;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.toggle-btn:hover {
+  transform: scale(1.2);
+}
+
+.tooltip {
+  position: absolute;
+  top: -25px; /* Adjust to position the tooltip above the icon */
+  left: 50%;
+  transform: translateX(-50%);
+  
+  padding: 4px 8px;
+  font-size: 12px;
+  border-radius: 4px;
+  opacity: 0;
+  visibility: hidden;
+  white-space: nowrap;
+  transition: opacity 0.1s ease-in-out;
+  z-index: 9999;
+}
+
+/* Show tooltip on hover */
+.relative:hover .tooltip {
+  opacity: 1;
+  visibility: visible;
+  
+}
+.relative-1 {
+  position: relative; /* For positioning the tooltip relative to the button */
+  display: flex;
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+  width: 60px; /* Circle width */
+  height: 60px; /* Circle height */
+  border-radius: 50%; /* Makes the container circular */
+  /* background-color: rgb(230, 230, 230); Light background for the circle */
+  cursor: pointer;
+  border: 2px solid transparent; /* Add border */
+  transition: all 0.3s ease;
+}
+
+.relative-1:hover {
+  border: 2px solid rgb(150, 191, 150); /* Add a border on hover */
+  /* background-color: rgb(245, 245, 245); Slightly darker background on hover */
+}
+
+.tooltip-1 {
+  position: absolute;
+  bottom: -30px; /* Place tooltip below the circle */
+  /* background-color: black; Tooltip background  */
+  /* color: white; Tooltip text color  */
+  padding: 4px 8px;
+  font-size: 12px;
+  border-radius: 4px;
+  white-space: nowrap;
+  display: none; /* Initially hidden */
+  z-index: 9998;
+}
+
+.relative-1:hover .tooltip-1 {
+  display: block; /* Show the tooltip on hover */
+}
+
+.icon {
+  /* color: rgb(60, 60, 60); Icon color  */
+  font-size: 24px; /* Icon size */
+  transition: transform 0.3s ease;
+}
+
+.relative-1:hover .icon {
+  transform: scale(1.2); /* Slightly enlarge the icon on hover */
+}
+
+.fade-in{
+  animation:  fadeIn 0.8s ease-in-out 2s forwards ;
+  opacity: 0; 
+}
+
+@keyframes fadeIn {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+.scale:hover{
+  transform: scale(1.1);
+}
