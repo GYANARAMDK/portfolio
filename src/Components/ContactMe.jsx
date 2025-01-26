@@ -36,7 +36,7 @@ const  ContactMe= forwardRef((props,ref)=> {
       <div className='grid grid-cols-1 sm:grid-cols-2 gap-4 border border-[#808080] p-3 m-4 rounded '>
           <div className='flex flex-col gap-8  items-center  justify-center '>
                       <h1 className='text-xl font-semibold '>Contact Informotion </h1>
-                      <h1 className='text-md '>gyanaramdhaka@gmail.com</h1>
+                      <h1 className='text-md '>gyanaramnitian@gmail.com</h1>
                       <h1 className="text-md">+91 8290970712</h1>
                       <h1 className='text-md'>Rajasthan, India</h1>
           </div>
